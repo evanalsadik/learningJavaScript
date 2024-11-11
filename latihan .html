@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+  //function
+  function damn(a, b) {
+  var volumeA;
+  var volumeB;
+  var total;
+  
+  volumeA = a **= 3;
+  volumeB = b **= 3;
+  total = volumeA + volumeB;
+  return total;
+  }
+  console.log(damn(8, 3));
+  
+  //refactoring
+  function damn2(a, b) {
+  return (a **=3) + (b **=3);
+  }
+  console.log(damn2(8, 4));
+  
+  //argumen & parameter
+  function tambah() {
+    var hasil = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      hasil += arguments[1];
+    }
+      return hasil;
+  }
+  var coba = tambah(6,7,2);
+  console.log(coba);
+  
+  //recursive
+  function x(n) {
+    if (n ===0) return;
+    console.log(n);
+    x(n - 1);
+  }
+  x(10);
+  
+  function factorial(n) {
+    if (n ===0) return 1;
+    return n * factorial(n - 1);
+  }
+  console.log(factorial(6));
+  
+</script>
+</body>
+</html>

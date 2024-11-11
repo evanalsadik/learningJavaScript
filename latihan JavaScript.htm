@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //while
+  var j = 1;
+  while (j <= 5) {
+    console.log("halo while");
+    j++;
+  }
+
+  //latihan 1
+  var angkot = 1;
+    while(angkot <= 5) {
+      console.log("angkot no. " + angkot + " beroperasi dengan baik");
+      angkot++;
+    }
+    
+  //for 
+  for (var i = 1; i <= 5; i++) {
+    console.log("helo for ");
+  }
+  
+  //latihan 2
+  var jumlahAngkot = 6;
+  var angkotBeroperasi = 3;
+  var angkot2 = 1;
+  while (angkot2 <= angkotBeroperasi) {
+    console.log("angkot no. " + angkot2 + " beroperasi dengan baik");
+    angkot2++;
+  }
+  for (angkot2 = angkotBeroperasi +1; angkot2 <= jumlahAngkot; angkot2++) {
+    console.log("angkot no. " + angkot2 + " sedang tidak beroperasi");
+  }
+  
+  //if else
+  var angka = 7;
+  if (angka %2 === 0) {
+    console.log(angka + " adalah angka genap");
+  } else {
+    console.log(angka + " adalah angka ganjil");
+  }
+  
+  //latihan 3
+  var jumlahAngkot = 6;
+  var angkotBeroperasi = 3;
+  var angkot3 = 1;
+  for (angkot3; angkot3 <= jumlahAngkot; angkot3++) {
+    if (angkot3 <= angkotBeroperasi) {
+      console.log("angkot no. " + angkot3 + " beroperasi dengan baik");
+    }else {
+      console.log("angkot no. " + angkot3 + " tidak beroperasi dengan baik");
+    }
+  }
+  
+  //else if
+  //var angka2 = prompt("masukkan angka: ");
+  //if (angka2 %2 === 0) {
+    //alert(angka2 + " adalah bilangan genap");
+  //}else if (angka2 === 1) {
+    //alert(angka2 + " adalah bilangan ganjil");
+  //}else {
+    //alert(angka2 + " bukan sebuah integer");
+  //}
+  
+  //latihan 4
+  console.log("========================================");
+  var jumlahAngkot = 6;
+  var angkotBeroperasi = 3;
+  var angkot4 = 1;
+  for (angkot4; angkot4 <= jumlahAngkot; angkot4++) {
+    if (angkot4 <= angkotBeroperasi) {
+      console.log("angkot no. " + angkot4 + " beroperasi dengan baik");
+    }else if (angkot4 === 4) {
+      console.log("angkot no. " + angkot4 + " sedang lembur");
+    }else {
+      console.log("angkot no. " + angkot4 + " tidak beroperasi dengan baik");
+    }
+  }
+  
+  // * latihan * 
+  console.log("========================================");
+  var jumlahAngkot = 6;
+  var angkotBeroperasi = 3;
+  var angkot4 = 1;
+  for (angkot4; angkot4 <= jumlahAngkot; angkot4++) {
+    if (angkot4 <= angkotBeroperasi && angkot4 !== 3) {
+      console.log("angkot no. " + angkot4 + " beroperasi dengan baik");
+    }else if (angkot4 === 3 || angkot4 == 4 || angkot4 == 6) {
+      console.log("angkot no. " + angkot4 + " sedang lembur");
+    }else {
+      console.log("angkot no. " + angkot4 + " tidak beroperasi dengan baik");
+    }
+  }
+  
+  //switch
+  var damn = prompt("masukkan angka anda: ");
+  switch (damn) {
+    case "croissant":
+    case "hamburger":
+    case "pizza":
+    case "molen":
+      alert (" hellyeah");
+      break;
+    case "udang":
+    case "kelapa":
+    case "jagung":
+    case "ubi":
+      alert (" dude watafak");
+      break;
+    default:
+      alert (" none");
+      break;
+  }
+  
+  //kondisi 1
+  var s = '';
+  for (var i = 0; i < 5; i++) {
+    for (var j = 0; j <= i; j++) {
+      s += '*';
+    }
+    s += '\n';
+  }
+  console.log(s);
+  
+  //kondisi 2
+  var t = '';
+  for (var k = 5; k > 0; k--) {
+    for (var l = 0; l < k; l++) {
+      t += '*';
+    }
+    t += '\n';
+  }
+  console.log(t);
+  
+  </script>
+</body>
+</html>

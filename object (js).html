@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" charset="utf-8">
+  //property & method 
+    var damn = {
+      nama : "damar",
+      umur : 82,
+      alamat : "neraka",
+      angka : [16, 8, 15, 79, 52, 9],
+      gerak : function() {
+        return "hai, nama saya " + this.nama +
+        " umur saya " + this.umur + " tahun" + "." + " Saya tinggal di " + this.alamat + " dan saya suka angka " + this.angka[3] + ".";
+      }
+    }
+    console.log(damn.gerak())
+    
+    
+    //membuat object
+    //object literal
+    var literal = {
+      nama : "ucok",
+      asal : "gta",
+      status : "mati suri",
+      jumlahUang : 1573777,
+    }
+    
+    //function declaration
+    function buatObject(nama, asal, tatus, jumlahUang) {
+      let dec = {};
+      this.nama = nama;
+      this.asal = asal;
+      this.tatus = tatus;
+      this.jumlahUang = jumlahUang;
+      return dec;
+    }
+    var contoh = buatObject('ucok', 'minecraft', 'alat', 0);
+    
+    //constructor
+    function BuatObject(nama, asal, tatus, jumlahUang) {
+      this.nama = nama;
+      this.asal = asal;
+      this.tatus = tatus;
+      this.jumlahUang = jumlahUang;
+    }
+    var contoh2 = new BuatObject("big smoke", "gta juga", "kegendutan", 737388);
+    
+    
+    //this (object literal)
+    var obj = { a : 10, nama : "damn" };
+    obj.halo = function() {
+      console.log(this);
+      console.log('halo');
+    }
+    obj.halo();
+    //this mengembalikan object yang bersangkutan 
+    
+    //this (contractor)
+    function Halo2() {
+      console.log(this);
+      console.log('halo2');
+    }
+    new Halo2()
+    //this mengembalikan object yang baru dibuat
+  </script>
+</body>
+</html>
